@@ -1,3 +1,5 @@
+![Logo of Scratch Clicker Help](./assets/Scratch_Clicker_Help_Logo.png)
+
 # scratch-clicker-help
 A Help Page for My Game of Scratch called "Scratch Clicker"
 
