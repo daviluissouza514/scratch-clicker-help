@@ -1,0 +1,132 @@
+/* ===== Reset ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2b2b45);
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+}
+
+/* ===== Layout ===== */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    animation: fadeSlide 1s ease;
+}
+
+/* ===== Logo ===== */
+.logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 280px;
+    animation: fadeSlide 1.2s ease;
+}
+
+/* ===== Titles ===== */
+h1 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #ffd966;
+    animation: fadeSlide 1.3s ease;
+}
+
+h2 {
+    margin-top: 25px;
+    color: #6ecbff;
+}
+
+/* ===== Text ===== */
+p, li {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+/* ===== Cards ===== */
+.box {
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    animation: fadeSlide 1.4s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Buttons ===== */
+.buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    min-width: 120px;
+    animation: float 3s ease-in-out infinite;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.save { background-color: #4caf50; }
+.load { background-color: #2196f3; }
+.reset { background-color: #f44336; }
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    opacity: 0.7;
+    font-size: 14px;
+    animation: fadeSlide 1.6s ease;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .logo {
+        max-width: 200px;
+    }
+}
