@@ -1,1 +1,0 @@
-Não e nem se atreve a apagar estes arquivos de imagens, pois faz com que o site fique mais "bonito", então pensem no que estão fazendo! 
