@@ -130,3 +130,23 @@ footer {
         max-width: 200px;
     }
 }
+
+.lang-toggle {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    background: none;
+    border: 2px solid currentColor;
+    color: inherit;
+    padding: 8px 14px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.lang-toggle:hover {
+    transform: scale(1.08);
+    background: rgba(255, 255, 255, 0.15);
+}
+
