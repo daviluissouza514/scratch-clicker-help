@@ -111,6 +111,9 @@ ul {
 .load { background-color: #2196f3; }
 .reset { background-color: #f44336; }
 
+
+/* ===== Language ==== */
+
 .lang-toggle {
     position: fixed;
     top: 70px;
@@ -129,7 +132,6 @@ ul {
     transform: scale(1.08);
     background: rgba(255, 255, 255, 0.15);
 }
-
 
 /* ===== Footer ===== */
 footer {
